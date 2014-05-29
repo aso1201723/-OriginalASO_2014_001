@@ -4,5 +4,10 @@
     <string name="app_name">OriginalASO_2014_001</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="headder">さん、あなたの運勢は</string>
+    <string name="footer">です。</string>
+    <string name="title">おみくじ</string>
+    <string name="name">NAME</string>
+    <string name="btnok">占う！</string>
 
 </resources>
