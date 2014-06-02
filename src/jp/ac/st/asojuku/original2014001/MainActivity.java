@@ -47,6 +47,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		EditText ename = (EditText)findViewById(R.id.edtName);
 		String inputMsg = ename.getText().toString();
 
+
 		//Intentインスタンス変数を用意
 		Intent intent = null;
 
@@ -55,25 +56,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				//大吉のページへ飛ばす
 				//インテントのインスタンス生成
 				intent = new Intent(MainActivity.this , DaikichiActivity.class);
-				//大吉のアクティビティ起動
-				startActivity(intent);
 				break;
 			case 1:
 				//中吉のページへ飛ばす
 				intent = new Intent(MainActivity.this , ChukichiActivity.class);
-				startActivity(intent);
 				break;
 			case 2:
 				//凶のページへ飛ばす
 				intent = new Intent(MainActivity.this , KyoActivity.class);
-				startActivity(intent);
 				break;
 			case 3:
 				//大凶のページへ飛ばす
 				intent = new Intent(MainActivity.this , DaikyoActivity.class);
-				startActivity(intent);
 				break;
 		}
+		intent.putExtra("NAME", inputMsg);
+		startActivity(intent);
 	}
 
 

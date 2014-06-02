@@ -1,7 +1,9 @@
 package jp.ac.st.asojuku.original2014001;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class DaikyoActivity extends Activity {
 
@@ -16,6 +18,13 @@ public class DaikyoActivity extends Activity {
 	protected void onResume() {
 		// TODO 自動生成されたメソッド・スタブ
 		super.onResume();
+
+		//MainActivityから値を受け取る
+		Intent intent = getIntent();
+		String name = intent.getStringExtra("NAME");
+
+		TextView txtname =(TextView)findViewById(R.id.txtNameDK);
+		txtname.setText(name);
 	}
 
 	@Override

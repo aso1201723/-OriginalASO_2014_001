@@ -9,5 +9,6 @@
     <string name="title">おみくじ</string>
     <string name="name">NAME</string>
     <string name="btnok">占う！</string>
+	<string name="unknown">---</string>
 
 </resources>
